@@ -1,8 +1,8 @@
 {
   "id": "3b567711-0403-4da2-8362-06970ffe8d91",
   "name": "TOR.Ext.PowerBI",
-  "publisher": "Default publisher",
-  "version": "17.0.0.0",
+  "publisher": "Torggler",
+  "version": "17.0.0.1",
   "brief": "PowerBI Interface",
   "description": "PowerBI Interface",
   "privacyStatement": "https://www.torggler.com/int/en/privacy-policy/",
