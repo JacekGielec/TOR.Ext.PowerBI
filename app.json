@@ -2,7 +2,7 @@
   "id": "3b567711-0403-4da2-8362-06970ffe8d91",
   "name": "TOR.Ext.PowerBI",
   "publisher": "Torggler",
-  "version": "17.0.0.3",
+  "version": "17.0.0.4",
   "brief": "PowerBI Interface",
   "description": "PowerBI Interface",
   "privacyStatement": "https://www.torggler.com/int/en/privacy-policy/",
@@ -28,6 +28,12 @@
       "publisher": "Eos Solutions Spa",
       "name": "TOR.Ext.Common Data Layer",
       "version": "16.0.0.11"
+    },
+    {
+      "id": "fe26f18b-0f61-44e0-b065-11c6c60cd591",
+      "publisher": "EOS Solutions",
+      "name": "Commissions",
+      "version": "16.0.61.0"
     }
   ],
   "screenshots": [],
