@@ -134,8 +134,16 @@ page 50658 "TOR Commissions Value Entries"
     local procedure GetSalesperson(): Code[20]
     var
         EOSAddSalespersonPurchaser: Record "EOS Add. Salesperson/Purchaser";
+        HeaderType: Integer;
     begin
-        EOSAddSalespersonPurchaser.SetRange("Header Type", 112);
+        if Rec."Document Type" = Rec."Document Type"::"Sales Invoice" then
+            HeaderType := 112;
+        if Rec."Document Type" = Rec."Document Type"::"Sales Credit Memo" then
+            HeaderType := 114;
+        if HeaderType = 0 then
+            exit('');
+
+        EOSAddSalespersonPurchaser.SetRange("Header Type", HeaderType);
         EOSAddSalespersonPurchaser.SetRange("Header Subtype", 0);
         EOSAddSalespersonPurchaser.SetRange("Header ID", Rec."Document No.");
         EOSAddSalespersonPurchaser.SetRange(Role, 'STD');
