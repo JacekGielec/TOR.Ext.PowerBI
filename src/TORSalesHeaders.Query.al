@@ -12,8 +12,8 @@ query 50651 "TOR Sales Headers"
     Caption = 'TOR Sales Headers';
     QueryType = Normal;
     OrderBy = ascending(No);
-    //It's possibile to add Queries to SmartLists with the QueryCategory proberty
-    QueryCategory = 'Customer List';
+    //It's possibile to add Queries to SmartLists with the QueryCategory property
+    //QueryCategory = 'Customer List';
 
     elements
     {
