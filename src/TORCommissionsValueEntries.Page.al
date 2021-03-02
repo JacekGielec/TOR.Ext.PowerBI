@@ -2,8 +2,7 @@
 // | Torggler                                                |
 // +---------------------------------------------------------+
 // Module					Date			ID		Description
-// TG-TDAG00000-001			23.02.21		dho         creation
-//https://api.businesscentral.dynamics.com/v2.0/5ce0ac5c-1f71-45bf-9f96-4d777c111064/Test_PL/torggler/app1/v1.0/companies('TORGGLER%20Polska%20Sp.%20z%20o.o.')/torApiValueEntries
+// TG-TDAG00000-001			02.03.21		dho     creation; Ship-to Customer No and UOM still missing
 
 /// <summary>
 /// Page TOR Value Entries (ID 50658).
