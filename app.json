@@ -34,6 +34,12 @@
       "publisher": "EOS Solutions",
       "name": "Commissions",
       "version": "16.0.61.0"
+    },
+    {
+      "id": "a4de899e-21f7-4f30-87e0-fdd56f2a723d",
+      "publisher": "Torggler",
+      "name": "TOR.Ext.LocalizationPL",
+      "version": "17.0.0.8"
     }
   ],
   "screenshots": [],
