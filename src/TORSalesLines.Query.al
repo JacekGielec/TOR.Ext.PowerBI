@@ -10,6 +10,7 @@
 query 50652 "TOR Sales Lines"
 {
     QueryType = Normal;
+    DataAccessIntent = ReadOnly;
 
     elements
     {

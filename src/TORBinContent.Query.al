@@ -4,6 +4,7 @@
 query 50657 "TOR Bin Content"
 {
     QueryType = Normal;
+    DataAccessIntent = ReadOnly;
 
     elements
     {

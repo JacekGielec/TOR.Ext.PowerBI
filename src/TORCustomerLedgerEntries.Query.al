@@ -10,6 +10,7 @@
 query 50656 "TOR Customer Ledger Entries"
 {
     QueryType = Normal;
+    DataAccessIntent = ReadOnly;
 
     elements
     {
