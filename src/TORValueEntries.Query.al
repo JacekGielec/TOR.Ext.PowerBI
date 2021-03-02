@@ -4,6 +4,7 @@
 query 50650 "TOR Value Entries"
 {
     QueryType = Normal;
+    DataAccessIntent = ReadOnly;
 
     elements
     {

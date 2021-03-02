@@ -4,6 +4,7 @@
 query 50653 "TOR Customers"
 {
     QueryType = Normal;
+    DataAccessIntent = ReadOnly;
 
     elements
     {

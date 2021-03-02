@@ -22,8 +22,11 @@ query 50651 "TOR Sales Headers"
             column(No; "No.") { }
             column(OrderDate; "Order Date") { }
             column(SelltoCustomerNo; "Sell-to Customer No.") { }
+            column(Bill_to_Customer_No_; "Bill-to Customer No.") { }
+            column(Ship_to_Code; "Ship-to Code") { }
             column(Status; Status) { }
             column(PaymentTermsCode; "Payment Terms Code") { }
+            column(EOS_Salesperson_Code; "EOS Salesperson Code") { }
             /*
             dataitem(EOS_Add__Salesperson_Purchaser; "EOS Add. Salesperson/Purchaser")
             {
