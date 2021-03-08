@@ -1,7 +1,7 @@
 /// <summary>
 /// Query TOR Bin Content (ID 50657).
 /// </summary>
-query 50657 "TOR Bin Content"
+query 50657 "TOR Bin Content Ext"
 {
     QueryType = Normal;
     DataAccessIntent = ReadOnly;
