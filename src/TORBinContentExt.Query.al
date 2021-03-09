@@ -36,6 +36,10 @@ query 50657 "TOR Bin Content Ext"
                 {
 
                 }
+                column(Item_Type; "Item Type")
+                {
+
+                }
             }
 
         }

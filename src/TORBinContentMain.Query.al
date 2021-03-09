@@ -36,6 +36,10 @@ query 50659 "TOR Bin Content Main"
                 {
 
                 }
+                column(Item_Type; "Item Type")
+                {
+
+                }
             }
 
         }
