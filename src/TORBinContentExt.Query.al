@@ -1,7 +1,7 @@
 /// <summary>
 /// Query TOR Bin Content (ID 50657).
 /// </summary>
-query 50657 "TOR Bin Content"
+query 50657 "TOR Bin Content Ext"
 {
     QueryType = Normal;
     DataAccessIntent = ReadOnly;
@@ -33,6 +33,10 @@ query 50657 "TOR Bin Content"
             {
                 DataItemLink = "No." = Bin_Content."Item No.";
                 column(Description; Description)
+                {
+
+                }
+                column(Item_Type; "Item Type")
                 {
 
                 }

@@ -1,0 +1,19 @@
+### All Api's ###
+GET {{baseurl}}/api/v2.0/
+Content-Type: application/json
+Authorization: Basic {{username}} {{password}}
+
+### TOR Commissions ###
+https://api.businesscentral.dynamics.com/v2.0/5ce0ac5c-1f71-45bf-9f96-4d777c111064/Test_PL/ODataV4/Company('TORGGLER%20Polska%20Sp.%20z%20o.o.')/TORCommissions
+Content-Type: application/json
+Authorization: Basic {{username}} {{password}}
+
+### TOR Commissions ###
+GET {{baseurl}}/ODataV4/companies({{companieId}})/TORCommissions
+Content-Type: application/json
+Authorization: Basic {{username}} {{password}}
+
+### TOR Commissions ###
+GET {{baseurl}}/ODataV4/Company('TORGGLER%20Polska%20Sp.%20z%20o.o.')/TORCommissions
+Content-Type: application/json
+Authorization: Basic {{username}} {{password}}
