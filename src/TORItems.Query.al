@@ -40,6 +40,9 @@ query 50655 "TOR Items"
             column(EOS_Commission_Group_Code; "EOS Commission Group Code")
             {
             }
+            column(Inventory; Inventory)
+            {
+            }
         }
     }
 
