@@ -75,6 +75,36 @@ query 50650 "TOR Value Entries"
                 column(Unit_of_Measure_Code; "Unit of Measure Code")
                 {
                 }
+
+                dataitem(Item;
+                Item)
+                {
+                    DataItemLink = "No." = ItemLedgerEntry."Item No.";
+
+                    column(Product_Group;
+                    "Product Group")
+                    {
+                    }
+                    column(Commission_Group; "EOS Commission Group Code")
+                    {
+
+                    }
+                    column(Description; Description)
+                    {
+
+                    }
+
+                    dataitem(Customer;
+                    Customer)
+                    {
+                        DataItemLink = "No." = ValueEntry."Source No.";
+                        column(Source_Name;
+                        Name)
+                        {
+
+                        }
+                    }
+                }
             }
         }
     }
