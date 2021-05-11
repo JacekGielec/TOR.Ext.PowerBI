@@ -157,7 +157,7 @@ page 50659 "TOR Comm. Value Entries 2"
         CommCalcSetup.SetRange(Disabled, false);
         CommCalcSetup.SetRange("Starting Date", 0D, Rec."Posting Date");
         CommCalcSetup.SetRange(Salesperson, Rec."Salespers./Purch. Code");
-        CommCalcSetup.SetRange("Product Commission Group Code", item."Product Group");
+        CommCalcSetup.SetRange("Product Commission Group Code", item."EOS Commission Group Code");
         if CommCalcSetup.FindLast() then
             exit(CommCalcSetup."Commission %");
     end;
