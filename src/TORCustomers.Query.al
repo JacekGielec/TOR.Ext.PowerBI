@@ -16,6 +16,10 @@ query 50653 "TOR Customers"
             column(Name; Name)
             {
             }
+            column(Mixer; mixer)
+            {
+            }
+
             column(CreditLimitLCY; "Credit Limit (LCY)")
             {
             }
