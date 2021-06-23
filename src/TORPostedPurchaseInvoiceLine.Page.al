@@ -35,29 +35,36 @@ page 50664 "TOR Purchase Invoice Line Tran"
             {
                 field(Cost; Getcost())
                 {
-
+                    Caption = 'Cost';
                 }
                 field(DocumentNo; Rec."Document No.")
                 {
+                    Caption = 'Document No.';
                 }
                 field(PostingDate; Rec."Posting Date")
                 {
+                    Caption = 'Posting Date';
                 }
                 field(DocumentDate; purchinvoice."Document Date")
                 {
+                    Caption = 'Document Date';
                 }
                 field(BuyFromVendorNo; Rec."Buy-from Vendor No.")
                 {
+                    Caption = 'Buy-from Vendor No.';
                 }
                 field(SellToCustomerName; purchinvoice."Buy-from Vendor Name")
                 {
+                    Caption = 'Buy-from Vendor Name';
                 }
 
                 field(Amount; Rec.Amount)
                 {
+                    Caption = 'Amount';
                 }
                 field(AmountAfterDiscount; Rec.Amount - Rec."Line Discount Amount")
                 {
+                    Caption = 'Amount After Discount';
                 }
 
             }
@@ -70,7 +77,7 @@ page 50664 "TOR Purchase Invoice Line Tran"
     trigger OnOpenPage()
     begin
         Rec.SetCurrentKey("No.");
-        Rec.SetFilter("No.", 'TRANSPORT');
+        Rec.SetFilter(Description, 'Trans*');
     end;
 
     trigger OnAfterGetRecord()
