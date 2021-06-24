@@ -66,7 +66,10 @@ page 50664 "TOR Purchase Invoice Line Tran"
                 {
                     Caption = 'Amount After Discount';
                 }
-
+                field(Dim5; GetDim5(Rec."Dimension Set ID"))
+                {
+                    ApplicationArea = all;
+                }
             }
         }
 
@@ -77,7 +80,7 @@ page 50664 "TOR Purchase Invoice Line Tran"
     trigger OnOpenPage()
     begin
         Rec.SetCurrentKey("No.");
-        Rec.SetFilter(Description, 'Trans*');
+        Rec.SetFilter(Description, '@*Trans*');
     end;
 
     trigger OnAfterGetRecord()
@@ -88,6 +91,17 @@ page 50664 "TOR Purchase Invoice Line Tran"
     local procedure GetCost(): Boolean
     begin
         exit(true);
+    end;
+
+    local procedure GetDim5(DimSetId: Integer): code[20]
+    var
+        DimMgt: Codeunit DimensionManagement;
+        DimSetEntry: Record "Dimension Set Entry" temporary;
+    begin
+        dimmgt.GetDimensionSet(DimSetEntry, DimSetId);
+        DimSetEntry.SetRange("Dimension Code", '5');
+        if DimSetEntry.FindFirst() then
+            exit(DimSetEntry."Dimension Value Code");
     end;
 }
 
