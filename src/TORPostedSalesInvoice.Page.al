@@ -78,6 +78,20 @@ page 50660 "TOR Posted Sales Invoice"
                 field(VATAmount; VATAmount)
                 {
                 }
+                field(ShipToCode; Rec."Ship-to Code")
+                {
+                }
+                field(ShipToName; Rec."Ship-to Name")
+                {
+                }
+                field(ShipToAddress; Rec."Ship-to Address")
+                {
+                }
+                field(ShipToPostCode; Rec."Ship-to Post Code")
+                {
+                }
+                field(ShipToCity; Rec."Ship-to City")
+                { }
 
             }
         }
