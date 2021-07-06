@@ -50,6 +50,8 @@ query 50653 "TOR Customers"
             column(ResponsibilityCenter; "Responsibility Center")
             {
             }
+            column(SystemCreatedAt; SystemCreatedAt) { }
+            column(SystemCreatedBy; SystemCreatedBy) { }
         }
     }
 
