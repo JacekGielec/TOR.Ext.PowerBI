@@ -8,7 +8,7 @@ query 50662 "TOR Value Entries API"
     APIGroup = 'powerBi';
     APIVersion = 'v2.0';
     Caption = 'TOR Value Entries  API', Locked = true;
-    EntityName = 'torValueEntrie';
+    EntityName = 'torValueEntry';
     EntitySetName = 'torValueEntries';
     DataAccessIntent = ReadOnly;
 

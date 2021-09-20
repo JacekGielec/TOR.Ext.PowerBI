@@ -4,11 +4,16 @@ Content-Type: application/json
 Authorization: Basic {{username}} {{password}}
 
 ### TOR Commissions - doesn't works ###
-GET {{baseurl}}/ODataV4/companies({{companieId}})/TORCommissions
+GET {{baseurl}}/ODataV4/companies({{companyId}})/TORCommissions
 Content-Type: application/json
 Authorization: Basic {{username}} {{password}}
 
 ### TOR Commissions ###
 GET {{baseurl}}/ODataV4/Company('TORGGLER%20Polska%20Sp.%20z%20o.o.')/TORCommissions
+Content-Type: application/json
+Authorization: Basic {{username}} {{password}}
+
+### NEW Value Entries Api ###
+GET {{baseurl}}/api/torggler/powerBi/v2.0/companies({{companyId}})/torValueEntries
 Content-Type: application/json
 Authorization: Basic {{username}} {{password}}
