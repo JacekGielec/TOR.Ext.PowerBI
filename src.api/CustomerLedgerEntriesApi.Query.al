@@ -4,9 +4,9 @@ query 50664 "Customer Ledger Entries Api"
     APIPublisher = 'torggler';
     APIGroup = 'powerBi';
     APIVersion = 'v2.0';
-    Caption = 'Commissions API', Locked = true;
-    EntityName = 'commission';
-    EntitySetName = 'commissions';
+    Caption = 'Customer Ledger Entries API', Locked = true;
+    EntityName = 'customerLedgerEntry';
+    EntitySetName = 'customerLedgerEntries';
     DataAccessIntent = ReadOnly;
 
     elements
