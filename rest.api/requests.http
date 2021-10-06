@@ -14,6 +14,6 @@ Content-Type: application/json
 Authorization: Basic {{username}} {{password}}
 
 ### NEW Value Entries Api ###
-GET {{baseurl}}/api/torggler/powerBi/v2.0/companies({{companyId}})/torValueEntries
+GET {{baseurl}}/api/torggler/powerBi/v2.0/companies({{companyId}})/valueEntries
 Content-Type: application/json
 Authorization: Basic {{username}} {{password}}
