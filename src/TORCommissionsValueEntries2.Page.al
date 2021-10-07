@@ -130,12 +130,32 @@ page 50659 "TOR Comm. Value Entries 2"
                 {
                     Caption = 'Source Name';
                 }
+                field(SellToCode; SellToCode)
+                {
+                    Caption = 'SellToCode';
+                }
+                field(SellToName; SellToName)
+                {
+                    Caption = 'SellToName';
+                }
+                field(ShipToCode; ShipToCode)
+                {
+                    Caption = 'ShipToCode';
+                }
+                field(ShipToName; ShipToName)
+                {
+                    Caption = 'ShipToName';
+                }
             }
         }
     }
     var
         Customer: Record Customer;
         Item: Record Item;
+        SellToCode: code[20];
+        SellToName: Text[100];
+        ShipToCode: code[20];
+        ShipToName: Text[100];
 
 
 
@@ -145,9 +165,33 @@ page 50659 "TOR Comm. Value Entries 2"
     end;
 
     trigger OnAfterGetRecord()
+    var
+        SI: Record "Sales Invoice Header";
+        SCM: Record "Sales Cr.Memo Header";
     begin
         if Customer.Get(Rec."Source No.") then;
         if Item.Get(Rec."Item No.") then;
+
+        SellToCode := '';
+        SellToName := '';
+        ShipToCode := '';
+        ShipToName := '';
+        if Rec."Document Type" = Rec."Document Type"::"Sales Invoice" then begin
+            if si.get(Rec."Document No.") then begin
+                SellToCode := si."Sell-to Customer No.";
+                SellToName := si."Sell-to Customer Name";
+                ShipToCode := si."Ship-to Code";
+                ShipToName := si."Ship-to Name";
+            end;
+        end else
+            if rec."Document Type" = rec."Document Type"::"Sales Credit Memo" then begin
+                if scm.get(rec."Document No.") then begin
+                    SellToCode := scm."Sell-to Customer No.";
+                    SellToName := scm."Sell-to Customer Name";
+                    ShipToCode := scm."Ship-to Code";
+                    ShipToName := scm."Ship-to Name";
+                end;
+            end;
     end;
 
     local procedure GetCommissionPercent(): Decimal
