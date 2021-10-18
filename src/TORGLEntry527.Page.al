@@ -3,6 +3,7 @@ page 50663 "TOR GL Value Entries 527"
     PageType = API;
     Caption = 'TOR GL Value Entries 527';
 
+
     APIPublisher = 'torggler';
     APIGroup = 'app1';
     //APIVersion = 'v1.0', 'v2.0';
