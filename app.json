@@ -2,7 +2,7 @@
   "id": "3b567711-0403-4da2-8362-06970ffe8d91",
   "name": "TOR.Ext.PowerBI",
   "publisher": "Torggler",
-  "version": "20.3.2.1",
+  "version": "20.3.3.0",
   "brief": "PowerBI Interface",
   "description": "PowerBI Interface",
   "privacyStatement": "https://www.torggler.com/int/en/privacy-policy/",
@@ -34,6 +34,12 @@
       "publisher": "EOS Solutions",
       "name": "Commissions",
       "version": "16.0.184.0"
+    },
+    {
+      "id": "a41facb4-aa1f-4f4b-a6d5-a574d9a33911",
+      "publisher": "IT.integro sp. z o.o.",
+      "name": "Polish Functionality - Starter Pack",
+      "version": "1.6.0.6"
     },
     {
       "id": "a4de899e-21f7-4f30-87e0-fdd56f2a723d",

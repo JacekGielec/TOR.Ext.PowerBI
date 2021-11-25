@@ -43,6 +43,9 @@ query 50655 "TOR Items"
             column(Inventory; Inventory)
             {
             }
+            column(ITI_PKWiU; "ITI PKWiU")
+            {
+            }
         }
     }
 
