@@ -46,6 +46,10 @@ query 50655 "TOR Items"
             column(ITI_PKWiU; "ITI PKWiU")
             {
             }
+            column(Tariff_No_; "Tariff No.")
+            {
+
+            }
         }
     }
 
