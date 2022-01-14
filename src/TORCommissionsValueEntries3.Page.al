@@ -96,7 +96,7 @@ page 50666 "TOR Comm. Value Entries 3"
                 {
                     Caption = 'Sales Amount (Actual)';
                     ApplicationArea = all;
-                    //Method = Sum;
+                    //Method = Sum;;
                 }
                 field(costAmountActual; Rec."Cost Amount (Actual)")
                 {
